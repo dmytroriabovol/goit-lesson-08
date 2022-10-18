@@ -1,0 +1,91 @@
+.section,
+.container {
+  padding: 40px;
+  border: 2px dotted gray;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.box.red {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: background-color 500ms;
+}
+
+.box.red:hover {
+  background-color: violet;
+}
+
+.box.green {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  transition: transform 500ms;
+}
+
+.box.green:hover {
+  transform: rotate(-45deg);
+}
+
+.box.green span {
+  transition: transform 500ms;
+}
+
+.box.green:hover span {
+  transform: rotate(45deg);
+}
+
+.box.blue {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  /* transform: scale(0.5); */
+  /* animation-name: scale; */
+  /* animation-duration: 2000ms; */
+  /* animation-timing-function: ease-in; */
+  /* animation-delay: 2s; */
+  /* animation-iteration-count: 3; */
+  /* animation-direction: alternate; */
+  /* animation: scale 2000ms ease-in 1; */
+}
+
+/* .box.blue:hover {
+  animation-play-state: paused;
+} */
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(3);
+  }
+
+  75% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(2);
+  }
+}
+
+.box.orange {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  /* transform: skew(10deg, 20deg); */
+}
